@@ -1,0 +1,4 @@
+Project Description
+This project is a full-featured web application that serves as an online book library, built with Angular on the frontend and Django on the backend. It integrates a comprehensive database of books and provides users with intuitive tools to explore available titles. Users can sort the book listings by publication time or popularity, making it easy to discover recent or highly-rated works.
+
+Each book has a dedicated detail page displaying all relevant information, including the synopsis and publication details. Additionally, the application offers an in-browser reading feature that allows users to read entire books online without leaving the site. By combining Angular’s dynamic, component-based architecture with Django’s robust and scalable backend, the project ensures a seamless, user-friendly experience while maintaining efficient data management and secure access to the content.
