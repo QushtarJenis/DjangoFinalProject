@@ -12,6 +12,8 @@ class RegisterView(APIView):
         username = request.data.get('username')
         email = request.data.get('email')
         password = request.data.get('password')
+
+        print(username, email, password)
         
         if not username or not email or not password:
             return Response({'error': 'Please provide username, email, and password'}, 

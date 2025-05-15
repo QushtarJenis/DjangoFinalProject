@@ -24,4 +24,5 @@ urlpatterns = [
     path('api/book/', BookListAPIView.as_view(), name='book-list'),
     path('api/book/<int:id>/', BookDetailAPIView.as_view(), name='book-detail'),
     path('api/auth/', include('authentication.urls')),
+    path('api/friends/', include('friends.urls')),
 ]

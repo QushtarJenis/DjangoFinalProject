@@ -46,3 +46,13 @@ class ReadingProgress(models.Model):
     def __str__(self):
         return f"{self.user.username} - {self.book.title}"
 
+class Audio(models.Model):
+    id = models.AutoField(primary_key=True)
+    oldUrl = models.CharField(max_length=255, blank=True, default='')
+    filePath = models.CharField(max_length=255, blank=True, default='')
+    title = models.CharField(max_length=255)
+    book = models.ForeignKey(Book, on_delete=models.CASCADE, related_name='audios', db_column='bookId')
+
+    class Meta:
+        db_table = 'audio'
+
